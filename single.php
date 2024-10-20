@@ -4,7 +4,7 @@
 <div class="container">
     <h1><?php the_title();?></h1>
 
-    <?php get_template_part('include/section','blog');?>
+    <?php get_template_part('include/section','blogcontent');?>
 </div>
 </section>
 <?php get_footer();?>

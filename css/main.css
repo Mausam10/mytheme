@@ -22,6 +22,8 @@ header .container {
   /* height: 100%; */
 }
 
+
+
 header .top-bar li a {
   padding: 0.25rem 1rem;
   color: #fff;
@@ -42,45 +44,6 @@ header .top-bar li:last-child a {
   padding-right: 0;
 }
 
-/* header .top-bar li .sub-menu {
-    display: block;
-    position:absolute;
-    z-index:999;
-    top: 100%;
-    left: 0;
-    background: #ffffff;
-    box-shadow:1px 1px 10px rgba(0,0,0,0.1);
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    width: 200px;
-    border-radius: .5rem;
-    text-align: center;
-    justify-content: center;
-}
-
-header .top-bar li .sub-menu a{
-    color:red;
-    padding: .25rem;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-
-}
-header .top-bar .sub-menu a:hover{
-    color: black;
-}
-header .top-bar > .menu-item-has-children:hover >.sub-menu{
-    display: block;
-}
-
-header .top-bar .menu-item-has-children .sub-menu >.menu-item-has-children:hover > .sub-menu{
-    display: block; 
-}
-header .top-bar .sub-menu li .sub-menu{
-    top: 0;
-    left: 100%;
-} */
 
 header .top-bar li .sub-menu {
   display: none;
@@ -122,4 +85,8 @@ header .top-bar .menu-item-has-children .sub-menu >.menu-item-has-children:hover
 header .top-bar .sub-menu li .sub-menu {
   top: 0;
   left: 100%;
+}
+
+.col-lg-3{
+  list-style-type: none;
 }

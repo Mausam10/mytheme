@@ -79,7 +79,7 @@ function my_first_post_type(){
        'public' => true,
        'has_archive' => true,
        'menu_icon' => 'dashicons-post-status',
-       'supports' => array('title', 'editor', 'thumbnail'),
+       'supports' => array('title', 'editor', 'thumbnail','custom-fields'),
        //'rewrite' => array('slug'=> 'cars'),
     );
 

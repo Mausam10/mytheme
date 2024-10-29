@@ -152,3 +152,19 @@ function enquiry_form()
 
 
 }
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+function slug_provide_walker_instance( $args ) {
+    if ( isset( $args['walker'] ) && is_string( $args['walker'] ) && class_exists( $args['walker'] ) ) {
+        $args['walker'] = new $args['walker'];
+    }
+    return $args;
+}
+add_filter( 'wp_nav_menu_args', 'slug_provide_walker_instance', 1001 );

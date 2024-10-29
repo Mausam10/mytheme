@@ -20,7 +20,10 @@
                    <?php get_template_part('include/section','cars');?>
                 <?php wp_link_pages();?>
         </div>
+      
         <div class="col-lg-6">
+            <?php get_template_part('include/form','enquiry');?>
+        
             <ul>
                 <li>
                     <!-- this fn works with the ACF -->
@@ -32,10 +35,10 @@
                     Registration: <?php the_field('registration');?>
                     <!-- Registration: <?php  //echo get_post_meta($post->ID,'Registration', true);?> -->
                 </li>
-                  
             </ul>
-       
+            </div>
         </div>
+      
 </div>
 </div>
 </section>
